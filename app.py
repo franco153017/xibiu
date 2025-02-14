@@ -21,7 +21,7 @@ my_list.append(6)
 print("list after append:", my_list)
  
  # Insert an element at specific position
-my_list.Insert (2, 7)
+my_list.insert (2, 7)
 print("list after insert:", my_list)
 
 # Remove an element
@@ -30,25 +30,26 @@ print("list after remove:", my_list)
 
 # Tuples
 my_tuple = (1, 2, 3, 4, 5)
-print( "tuple:", my_tuple)
+print( "Tuple:", my_tuple)
 
 # acessing elements ( same as lists)
-print("first element:", my_tuple[0])
-print("last element:", my_tuple[-1])
+print("first element:", my_tuple [0])
+print("last element:", my_tuple [-1])
 
 #loops
 #for loop
-fruits = ["aplle", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
  print(fruit)
 
- # while loop
- i = 0
- while i < 5:
-    print(i)
-    i += 1
+# while loop
+i = 0
+while i < 5:
+       print(i)
+       i += 1
 
-    #looping over a list with indices
-    my_list = [1, 2, 3, 4, 5]
-    for i, elemnt in enumerate(my_list):
-       print(f"Index {i}: {element}")
+#looping over a list with indices
+       
+my_list = [1, 2, 3, 4, 5]
+for i, element in enumerate(my_list):
+   print(f"Index {i}: {element}")

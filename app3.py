@@ -1,6 +1,6 @@
 #tic tac toe game in Python
 
-board = [' ' for _ in range(9)] #initialize an empty board
+board = [' ' for _ in range (9)] #initialize an empty board
 
 def print_board():
     row1 = '| {} | {} | {} |'.format(board[0], board [1], board [2])
@@ -16,12 +16,12 @@ def print_board():
 def player_move(icon):
     if icon == 'x':
             number = 1
-    elif icon == 'o':
+    elif icon == '0':
             number = 2
 
             print("Your turn player {}".format(number)) 
 
-            choice=int(input("Enter you mover (1-9):").strip())
+            choice = int(input("Enter you mover (1-9):").strip())
     if board[choice - 1] == ' ':
             board[choice - 1] == icon
     else:
@@ -44,7 +44,7 @@ def is_victory(icon):
 while True:
     print_board()
     player_move('X')
-    print_board
+    print_board ()
     if is_victory('X'):
         print("player 1 wins!! Congratulations!" )
         break
